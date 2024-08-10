@@ -1,27 +1,23 @@
 ## Project Overview:
 This project is a simple yet functional blogging platform that allows users to read, create, and view posts with ease. It's designed with a clean and modern interface which is flexible with devices.
 
-# Project Dependencies:
-1. Navigate to your project directory.
-cd path/to/your/project
-2. Create a package.json (if not present)
-npm init -y
-3. Install lodash
-npm install express body-parser ejs mongoose lodash
+# *Project Dependencies:*
+1. Navigate to your project directory : cd path/to/your/project
+2. Create a package.json (if not present) : npm init -y
+3. Install lodash : npm install express body-parser ejs mongoose lodash
 4. Ensure MongoDB is installed and running.
-5. If you want to automatically restart your server when changes are made, you can install nodemon:
-npm install -g nodemon
+5. If you want to automatically restart your server when changes are made, you can install nodemon : npm install -g nodemon
 
 ## To run the project
 1. All the above dependencies should be satisfied.
-2. Run the command : node app.js OR nodemon app.js OR npx nodemon app.js
+2. Run the command : node app.js *OR* nodemon app.js *OR* npx nodemon app.js
 3. Go to the website : http://localhost:3001/
 
-# Technical Details:
-## Frontend:
+# *Technical Details:*
+## 1. Frontend:
 EJS Templates: EJS (Embedded JavaScript) templates are used to render HTML dynamically. This allows for reusable components and dynamic content rendering.
 CSS Styling: Custom CSS provides a professional look with features like responsive design, hover effects, and animations.
-## Backend:
+## 2. Backend:
 Node.js and Express.js: The server-side logic is handled by Node.js with the Express.js framework. This setup handles routing, server-side rendering with EJS, and interactions with the MongoDB database.
 MongoDB: A NoSQL database used to store blog posts. Each post document includes a title, content, and a creation timestamp.
 
@@ -37,7 +33,7 @@ MongoDB: A NoSQL database used to store blog posts. Each post document includes 
 
  ## Similarly there are About Us page and Contact Us page which provides information about the blog or its creator. It includes a welcome message and an optional section for additional details. Users can find contact information to get in touch with the blog owner.
 
- # Workflow
-User Interaction: Users visit the homepage to view the latest posts. They can click on "Read more" to view a full post or navigate to the "Compose" page to create new content.
-Data Handling: When a user submits a new post, the backend processes the data and saves it to MongoDB. This data is then retrieved and displayed on the homepage.
-Page Rendering: EJS templates render dynamic content on the client-side, ensuring that the latest posts and user actions are reflected in real-time.
+ # *Workflow*
+1. User Interaction: Users visit the homepage to view the latest posts. They can click on "Read more" to view a full post or navigate to the "Compose" page to create new content.
+2. Data Handling: When a user submits a new post, the backend processes the data and saves it to MongoDB. This data is then retrieved and displayed on the homepage.
+3. Page Rendering: EJS templates render dynamic content on the client-side, ensuring that the latest posts and user actions are reflected in real-time.
