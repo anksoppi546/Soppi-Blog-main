@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+<div class="home-banner">
+  <div class="banner-text">
+    <h1><%= additionalContent.title %></h1>
+    <p><%= additionalContent.description %></p>
+  </div>
+  <img src="<%= additionalContent.image %>" alt="Banner Image" class="banner-image"/>
+</div>
+
+<h2>Latest Posts</h2>
+<p><%= startingContent %></p>
+
+<% posts.forEach(function(post) { %>
+  <div class="post-preview">
+    <h2><%= post.title %></h2>
+    <p><%= post.content.substring(0, 100) + "..." %></p>
+    <p class="post-date">Posted on <%= post.createdAt.toLocaleDateString() %> at <%= post.createdAt.toLocaleTimeString() %></p>
+    <a href="/posts/<%= post.title %>">Read More</a>
+  </div>
+<% }); %>
+
+<%- include("partials/footer"); -%>
