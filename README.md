@@ -31,9 +31,9 @@ MongoDB: A NoSQL database used to store blog posts. Each post document includes 
  After filling out the title and content fields, users can submit the form. The new post is then saved to the MongoDB database and appears on the homepage.
  ![Compose Page](https://github.com/user-attachments/assets/67fbb03b-3c68-438c-8be0-3c7094407d81)
 
- ## Similarly there are About Us page and Contact Us page which provides information about the blog or its creator. It includes a welcome message and an optional section for additional details. Users can find contact information to get in touch with the blog owner.
+Similarly there are About Us page and Contact Us page which provides information about the blog or its creator. Users can find contact information to get in touch with the blog owner.
 
- # *Workflow*
+ # *Workflow:*
 1. User Interaction: Users visit the homepage to view the latest posts. They can click on "Read more" to view a full post or navigate to the "Compose" page to create new content.
 2. Data Handling: When a user submits a new post, the backend processes the data and saves it to MongoDB. This data is then retrieved and displayed on the homepage.
 3. Page Rendering: EJS templates render dynamic content on the client-side, ensuring that the latest posts and user actions are reflected in real-time.
