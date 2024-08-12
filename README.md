@@ -10,8 +10,19 @@ This project is a simple yet functional blogging platform that allows users to r
 
 ## To run the project
 1. All the above dependencies should be satisfied.
-2. Run the command : node app.js *OR* nodemon app.js *OR* npx nodemon app.js
-3. Go to the website : http://localhost:3001/
+2. Run the command
+```bash
+node app.js
+```
+OR
+```bash
+nodemon app.js
+```
+OR
+```bash
+npx nodemon app.js
+```
+4. Go to the website : http://localhost:3001/
 
 # *Technical Details:*
 ## 1. Frontend:
